@@ -17,7 +17,7 @@ acc = Client("myacc",api_id=api_id,api_hash=api_hash,session_string=ss)
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
- editable = await m.reply_text("**I am a simple save restricted bot**.\n\nSend message link to clone/download here\n Must join:- @Bypass_restricted")
+ editable = await m.reply_text("**I am a simple save restricted bot**.\n\nSend message link to clone/download here\n Say love you to ❤️ Gagan")
 @bot.on_message(filters.command(["bulk"]))
 async def account_login(bot: Client, m: Message):
  editable = await m.reply_text("**I am not an advanced bot")
@@ -184,3 +184,5 @@ def save(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
 
 # infinty polling
 bot.run()
+# Add the following line to print the deployment message
+print("Bot Deployed Successfully --- Team SPY")
